@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cronómetros</h1>
+        <div class="input-group">
+            <label for="minutes">Minutos: </label>
+            <input type="number" id="minutes" min="0" placeholder="0">
+            <label for="seconds">Segundos: </label>
+            <input type="number" id="seconds" min="0" max="59" placeholder="0">
+        </div>
+        <div class="timers">
+            <div class="timer">
+                <h2>Primer Cronómetro</h2>
+                <div id="display1" class="display">00:00</div>
+                <div id="status1" class="status">En pausa</div>
+                <div class="buttons">
+                    <button id="start1" class="btn">Iniciar</button>
+                    <button id="stop1" class="btn">Detener</button>
+                    <button id="reset1" class="btn">Reiniciar</button>
+                </div>
+            </div>
+            <div class="timer">
+                <h2>Segundo Cronómetro</h2>
+                <div id="display2" class="display">00:00</div>
+                <div id="status2" class="status">En pausa</div>
+                <div class="buttons">
+                    <button id="start2" class="btn">Iniciar</button>
+                    <button id="stop2" class="btn">Detener</button>
+                    <button id="reset2" class="btn">Reiniciar</button>
+                </div>
+            </div>
+        </div>
+        <div class="additional-timers">
+            <div class="timer">
+                <h2>Cronómetro A</h2>
+                <div class="input-group wide">
+                    <label for="minutesA">Minutos: </label>
+                    <input type="number" id="minutesA" min="0" placeholder="0">
+                    <label for="secondsA">Segundos: </label>
+                    <input type="number" id="secondsA" min="0" max="59" placeholder="0">
+                </div>
+                <div id="displayA" class="display">00:00</div>
+                <div id="statusA" class="status">En pausa</div>
+            </div>
+            <div class="timer">
+                <h2>Cronómetro B</h2>
+                <div class="input-group wide">
+                    <label for="minutesB">Minutos: </label>
+                    <input type="number" id="minutesB" min="0" placeholder="0">
+                    <label for="secondsB">Segundos: </label>
+                    <input type="number" id="secondsB" min="0" max="59" placeholder="0">
+                </div>
+                <div id="displayB" class="display">00:00</div>
+                <div id="statusB" class="status">En pausa</div>
+            </div>
+            <div class="timer">
+                <h2>Cronómetro C</h2>
+                <div class="input-group wide">
+                    <label for="minutesC">Minutos: </label>
+                    <input type="number" id="minutesC" min="0" placeholder="0">
+                    <label for="secondsC">Segundos: </label>
+                    <input type="number" id="secondsC" min="0" max="59" placeholder="0">
+                </div>
+                <div id="displayC" class="display">00:00</div>
+                <div id="statusC" class="status">En pausa</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="startAll" class="btn">Iniciar Todos</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Cronómetros Modernos. Todos los derechos reservados.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com" class="social-icon" target="_blank"><img src="img/twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com" class="social-icon" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="crono.js"></script>
+</body>
+</html>
